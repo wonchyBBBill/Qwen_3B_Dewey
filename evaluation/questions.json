@@ -1,0 +1,207 @@
+{
+  "benchmark": "dewey_chapter2_heldout",
+  "description": "Twenty questions derived from Chapter II of Art as Experience. Chapter II is completely held out from training.",
+  "questions": [
+    {
+      "id": "C01",
+      "type": "conceptual",
+      "question": "Why does Dewey reject the idea that connecting aesthetic experience with the basic processes of life necessarily lowers the dignity or value of art?",
+      "rubric": [
+        "Explains the continuity between aesthetic experience and ordinary vital experience.",
+        "Recognizes that Dewey is not reducing art to crude biological appetite.",
+        "Explains how heightened or fulfilled experience can emerge from the same organism-environment processes."
+      ]
+    },
+    {
+      "id": "C02",
+      "type": "conceptual",
+      "question": "How does Dewey's account of the organism's interaction with its environment help explain what he means by experience?",
+      "rubric": [
+        "Treats experience as arising through an organism's active relation with its environment.",
+        "Explains the movement from mere interaction toward participation and communication.",
+        "Does not treat experience as merely an internal mental state."
+      ]
+    },
+    {
+      "id": "C03",
+      "type": "conceptual",
+      "question": "Why does Dewey think that the opposition between mind and body, or intellect and sense, distorts our understanding of experience?",
+      "rubric": [
+        "Explains the functional continuity between sense, action, and intellect.",
+        "Recognizes that sense is not merely passive reception of stimuli.",
+        "Explains how these supposedly separate faculties participate together in experience."
+      ]
+    },
+    {
+      "id": "C04",
+      "type": "conceptual",
+      "question": "Dewey says that human beings can carry the unity of sense and impulse found in animal life to unprecedented heights. What does he mean by this?",
+      "rubric": [
+        "Recognizes continuity rather than a simple opposition between humans and animals.",
+        "Explains the role of communication, conscious meaning, and deliberate expression.",
+        "Connects greater human complexity with richer rather than weaker integration of experience."
+      ]
+    },
+    {
+      "id": "C05",
+      "type": "conceptual",
+      "question": "Why does Dewey connect increasing human complexity with more complicated rhythms of struggle and consummation?",
+      "rubric": [
+        "Explains that greater differentiation creates the need for more comprehensive relationships among activities.",
+        "Connects complexity with resistance, experimentation, novelty, insight, and feeling.",
+        "Explains why fulfillment consequently becomes richer and more subtly differentiated."
+      ]
+    },
+    {
+      "id": "C06",
+      "type": "conceptual",
+      "question": "What does Dewey mean when he says that time is an 'organizing medium' of experience rather than merely a succession of separate instants?",
+      "rubric": [
+        "Explains temporal development in terms of anticipation, resistance, suspense, fulfillment, and consummation.",
+        "Recognizes that completed phases can become starting points for subsequent development.",
+        "Distinguishes Dewey's account from treating moments as isolated points."
+      ]
+    },
+    {
+      "id": "C07",
+      "type": "conceptual",
+      "question": "Why does Dewey compare a momentary perception, such as the recognition produced by a flash of lightning, with a dramatic climax that depends on an entire preceding development?",
+      "rubric": [
+        "Explains why an apparently instantaneous perception can be the culmination of a longer process.",
+        "Connects the meaning of the moment with what precedes it.",
+        "Explains why the isolated instant would be unintelligible without its temporal context."
+      ]
+    },
+    {
+      "id": "C08",
+      "type": "conceptual",
+      "question": "How does Dewey explain the relationship between the apparent divisions of human life—such as thought and action, imagination and work, or emotion and intellect—and the actual organization of experience?",
+      "rubric": [
+        "Recognizes Dewey's criticism of institutional and cultural compartmentalization.",
+        "Distinguishes socially produced divisions from divisions inherent in human nature.",
+        "Explains how such separations interfere with integrated experience."
+      ]
+    },
+    {
+      "id": "C09",
+      "type": "conceptual",
+      "question": "What role does the body and sensory experience play in Dewey's conception of thought and meaning?",
+      "rubric": [
+        "Rejects the idea that bodily sensation is merely raw material later processed by detached intellect.",
+        "Explains the participation of sense in obtaining and organizing meaning.",
+        "Connects bodily participation with richer interaction with the environment."
+      ]
+    },
+    {
+      "id": "C10",
+      "type": "conceptual",
+      "question": "Why does Dewey regard the continuity between ordinary experience and aesthetic experience as philosophically important?",
+      "rubric": [
+        "Explains why aesthetic experience should not be treated as belonging to an entirely separate realm.",
+        "Connects aesthetic experience to intensified or fulfilled processes already present in life.",
+        "Shows how this continuity challenges conventional divisions between the ideal and the ordinary."
+      ]
+    },
+
+    {
+      "id": "T01",
+      "type": "transfer",
+      "question": "A person spends an entire day working on a difficult piece of music. The activity involves frustration, experimentation, revision, anticipation, and finally a moment in which the composition seems to come together. Using Dewey's framework from Chapter II, explain why the final moment cannot be understood independently of everything that preceded it.",
+      "rubric": [
+        "Applies the concepts of resistance, development, anticipation, and consummation.",
+        "Explains why the culminating moment derives meaning from the preceding process.",
+        "Does more than simply label the experience 'aesthetic'."
+      ]
+    },
+    {
+      "id": "T02",
+      "type": "transfer",
+      "question": "Imagine two people looking at the same landscape. One mechanically identifies the objects in front of him, while the other becomes deeply absorbed in the scene and experiences its qualities as a unified whole. How might Dewey explain the difference between these two experiences?",
+      "rubric": [
+        "Uses Dewey's distinction between mere recognition and richer experience.",
+        "Connects perception with participation rather than passive reception.",
+        "Explains the role of accumulated experience, attention, and organization."
+      ]
+    },
+    {
+      "id": "T03",
+      "type": "transfer",
+      "question": "A university separates students' intellectual work from practical activity so completely that students rarely see how their theoretical knowledge bears on anything they do. How might Dewey criticize this educational arrangement?",
+      "rubric": [
+        "Applies Dewey's criticism of compartmentalization.",
+        "Connects thought with action and experience.",
+        "Explains why separating these activities can impoverish experience rather than merely being an organizational inconvenience."
+      ]
+    },
+    {
+      "id": "T04",
+      "type": "transfer",
+      "question": "A designer says that the best design is one that follows a fixed abstract plan, regardless of how people actually interact with the finished object. How might Dewey's account of experience challenge this view?",
+      "rubric": [
+        "Connects design with the lived interaction of organism and environment.",
+        "Explains why abstract plan and actual experience cannot simply be separated.",
+        "Considers how means, consequences, perception, and fulfillment belong to a unified process."
+      ]
+    },
+    {
+      "id": "T05",
+      "type": "transfer",
+      "question": "Suppose a person argues that bodily sensations are inferior to abstract reasoning because sensations merely provide raw information while the mind alone creates meaning. How would Dewey respond?",
+      "rubric": [
+        "Rejects a simple opposition between sensation and intellect.",
+        "Explains the active role of sense in participation and meaning.",
+        "Shows how intellect itself operates within experience rather than outside it."
+      ]
+    },
+    {
+      "id": "T06",
+      "type": "transfer",
+      "question": "A software developer describes a creative project as nothing more than a sequence of independent tasks: coding, debugging, designing, and testing. Another developer says that the significance of each task depends on how it contributes to the development and completion of the whole project. Which view is closer to Dewey's account of experience, and why?",
+      "rubric": [
+        "Favors the second view for Deweyan reasons.",
+        "Explains the organization of temporal development into a meaningful whole.",
+        "Connects individual phases with anticipation, resistance, and consummation."
+      ]
+    },
+    {
+      "id": "T07",
+      "type": "transfer",
+      "question": "A person remembers a childhood place after twenty years and experiences an unexpectedly powerful emotional response. Using Dewey's account of experience, explain why the physical place in the present can carry meanings accumulated from the past.",
+      "rubric": [
+        "Explains how past experience can become active within present perception.",
+        "Connects memory and present perception without reducing the experience to a private mental association.",
+        "Recognizes the accumulation of experience in places and objects."
+      ]
+    },
+    {
+      "id": "T08",
+      "type": "transfer",
+      "question": "A company divides its employees into strictly separated departments and insists that each department should concern itself only with its own specialized function. Over time, employees become increasingly unable to understand the organization as a whole. How would Dewey analyze this situation?",
+      "rubric": [
+        "Applies the idea of compartmentalization.",
+        "Explains how excessive specialization can disrupt relationships among activities.",
+        "Connects organizational fragmentation with impoverishment of experience."
+      ]
+    },
+    {
+      "id": "T09",
+      "type": "transfer",
+      "question": "Someone argues that an aesthetic experience must be detached from practical life because practical activity is merely useful whereas art is valuable precisely because it has no practical consequences. How would Dewey challenge this opposition?",
+      "rubric": [
+        "Rejects the simple practical/aesthetic opposition.",
+        "Uses Dewey's continuity between vital activity and aesthetic fulfillment.",
+        "Explains why practical engagement can contain the germ or structure of aesthetic experience."
+      ]
+    },
+    {
+      "id": "T10",
+      "type": "transfer",
+      "question": "Consider a scientific researcher who spends months pursuing a problem. Many experiments fail, some produce unexpected results, and eventually several observations suddenly form a coherent explanation. Using Dewey's framework, explain how the failures and resistances can belong to the same experience as the eventual intellectual fulfillment.",
+      "rubric": [
+        "Applies struggle, resistance, experimentation, and consummation.",
+        "Explains why fulfillment is constituted through the preceding development rather than merely following it.",
+        "Treats intellectual activity as part of embodied interaction with an environment rather than as detached thought."
+      ]
+    }
+  ]
+}
