@@ -2,8 +2,12 @@
 
 import math
 
-import mlx.core as mx
-import mlx.nn as nn
+try:
+    import mlx.core as mx
+    import mlx.nn as nn
+except ImportError:
+    pass
+    
 import torch
 from unsloth import FastLanguageModel
 
