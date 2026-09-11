@@ -80,7 +80,7 @@ def perplexity(model, tokenizer, text):
         return math.exp(mean_loss)
 
     else:
-        # ========== Original PyTorch / CUDA path ==========
+        # ========== PyTorch / CUDA path ==========
         encodings = tokenizer(text, return_tensors="pt")
         input_ids = encodings["input_ids"]
 
@@ -108,13 +108,17 @@ def perplexity(model, tokenizer, text):
         return math.exp(mean_loss)
 
 
-with open(
-    TEST_FILE,
-    "r",
-    encoding="utf-8"
-) as f:
+def load_jsonl_text(filepath):
+    texts = []
+    with open(filepath, "r", encoding="utf-8") as f:
+        for line in f:
+            data = json.loads(line)
+            text = data.get("text") or data.get("content") or ""
+            texts.append(text)
+    return " ".join(texts)
 
-    test_text = f.read()
+
+test_text = load_jsonl_text(TEST_FILE)
 
 
 for name, path in [
