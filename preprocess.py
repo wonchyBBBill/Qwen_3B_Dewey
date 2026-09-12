@@ -12,12 +12,17 @@ from transformers import AutoTokenizer
 
 MODEL_NAME = "Qwen/Qwen2.5-3B"
 
-CHAPTER_DIR = Path("./Art_as_Experience_Chapters")
+CHAPTER_DIR = Path("./Dewey_Chapters")
 
 OUTPUT_DIR = Path("./data")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-TEST_CHAPTER = "02_CHAPTER_II.txt"
+TEST_CHAPTER = ["Art_a_02.txt",
+                "Democ_02.txt",
+                "Recon_02.txt"]
+VAL_CHAPTER = ["Art_a_01.txt",
+               "Democ_01.txt",
+               "Recon_01.txt"]
 
 MAX_LENGTH = 2048
 
@@ -120,10 +125,11 @@ def make_chunks(paragraphs, max_length):
 train_chunks = []
 
 chapter_files = sorted(CHAPTER_DIR.glob("*.txt"))
+excluded = set(TEST_CHAPTER + VAL_CHAPTER)
 
 for path in chapter_files:
 
-    if path.name == TEST_CHAPTER:
+    if path.name in excluded:
         continue
 
     paragraphs = read_paragraphs(path)
@@ -141,25 +147,47 @@ for path in chapter_files:
 
 
 # --------------------------------------------------
-# Process test chapter separately
+# Process test and validation chapters separately
 # --------------------------------------------------
 
-test_path = CHAPTER_DIR / TEST_CHAPTER
+test_chunks = []
 
-test_paragraphs = read_paragraphs(test_path)
+for path in chapter_files:
 
-test_chunks_raw = make_chunks(
-    test_paragraphs,
-    MAX_LENGTH
-)
+    if path.name in TEST_CHAPTER:
 
-test_chunks = [
-    {
-        "text": chunk,
-        "chapter": test_path.stem
-    }
-    for chunk in test_chunks_raw
-]
+        paragraphs = read_paragraphs(path)
+
+        chunks = make_chunks(
+            paragraphs,
+            MAX_LENGTH
+        )
+
+        for chunk in chunks:
+            test_chunks.append({
+                "text": chunk,
+                "chapter": path.stem
+            })
+
+
+val_chunks = []
+
+for path in chapter_files:
+
+    if path.name in VAL_CHAPTER:
+
+        paragraphs = read_paragraphs(path)
+
+        chunks = make_chunks(
+            paragraphs,
+            MAX_LENGTH
+        )
+
+        for chunk in chunks:
+            val_chunks.append({
+                "text": chunk,
+                "chapter": path.stem
+            })
 
 
 # --------------------------------------------------
@@ -191,6 +219,10 @@ save_jsonl(
     OUTPUT_DIR / "dewey_test.jsonl"
 )
 
+save_jsonl(
+    val_chunks,
+    OUTPUT_DIR / "dewey_val.jsonl"
+)
 
 # --------------------------------------------------
 # Print statistics
@@ -217,3 +249,6 @@ print("Training tokens:", count_tokens(train_chunks))
 
 print("Test chunks:", len(test_chunks))
 print("Test tokens:", count_tokens(test_chunks))
+
+print("Validation chunks:", len(val_chunks))
+print("Validation tokens:", count_tokens(val_chunks))
